@@ -1,5 +1,5 @@
 # Restaurant List Web
-###### This code is built on Express.js
+###### This code is built on Express
 
 * 可以在首頁看到所有餐廳與它們的簡單資料：
   * 餐廳照片
