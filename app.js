@@ -21,10 +21,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/restaurants/:restaurant_id', (req, res) => {
-  const restaurant = restaurantList.results.filter(restaurant => restaurant.id == req.params.restaurant_id)
+  const restaurant = restaurantList.results.find(restaurant => restaurant.id == req.params.restaurant_id)
   console.log(restaurant)
   // past a restaurant information into 'show' partial template
-  res.render('show', { restaurants: restaurant[0] })
+  res.render('show', { restaurants: restaurant })
 })
 
 app.get('/search', (req, res) => {
